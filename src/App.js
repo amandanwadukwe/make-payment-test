@@ -25,12 +25,12 @@ const [expiryYear, setExpiryYear] = useState("");
       "expiry_year": expiryYear,
       "currency": "NGN",
       "amount": amount,
-      "redirect_url": "https://www.google.com",
+      // "redirect_url": "https://www.google.com",
       "fullname": name,
       "email": email,
       "phone_number": phoneNumber,
-      "enckey": process.env.FLW_ENCRYPTION_KEY,
-      "tx_ref": "example01",
+      "enckey": "FLWSECK_TESTe31dc2f52af1",
+      "tx_ref": "example02"
   })
   .then((res) => console.log(res.data))
   .catch((err) => console.error(err));
