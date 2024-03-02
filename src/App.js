@@ -35,6 +35,10 @@ const [expiryYear, setExpiryYear] = useState("");
   .then((res) => console.log(res.data))
   .catch((err) => console.error(err));
   }
+
+  const unUsedVariables =()=>{
+    setAmount(2000)
+  }
   return (
     <div className="App">
         {/*<a href="https://flutterwave.com/pay/da9mgena5nls">Get tickets</a>*/}
@@ -50,6 +54,8 @@ const [expiryYear, setExpiryYear] = useState("");
           <input type="number" value={expiryYear} max={99} placeholder="00" onChange={(e) => setExpiryYear(e.target.value)}/>
           <input type="submit" onClick={makePayment} value="Get Tickets"/>
         </form>
+
+        <button type="button" onClick={unUsedVariables}>Set amount to 2000</button>
     </div>
   );
 }
